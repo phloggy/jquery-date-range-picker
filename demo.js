@@ -501,5 +501,15 @@ $(function()
 		}
 	});
 
-
+	$('#date-range60').dateRangePicker(
+	{		
+        fixedStartDate: true,
+		startDate: '2017-10-10'
+	});
+	
+	$('#date-range61').dateRangePicker(
+	{		
+        fixedEndDate: true,
+		endDate: '2017-10-24'
+	});
 });
