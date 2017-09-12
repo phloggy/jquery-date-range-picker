@@ -894,8 +894,8 @@
             customArrowNextSymbol: null,
             monthSelect: false,
             yearSelect: false,
-			fixedStartDate: false,
-			fixedEndDate: false
+            fixedStartDate: false,
+            fixedEndDate: false
         }, opt);
 
         opt.start = false;
@@ -1470,10 +1470,10 @@
                 opt.start = moment(parseInt(time)).startOf('month').valueOf();
                 opt.end = moment(parseInt(time)).endOf('month').valueOf();
             } else if (opt.fixedStartDate) {
-				opt.end = handleStart(time);
-			} else if (opt.fixedEndDate) {
-				opt.start = handleStart(time);
-			} else if ((opt.start && opt.end) || (!opt.start && !opt.end)) {
+                opt.end = handleStart(time);
+            } else if (opt.fixedEndDate) {
+                opt.start = handleStart(time);
+            } else if ((opt.start && opt.end) || (!opt.start && !opt.end)) {
                 opt.start = handleStart(time);
                 opt.end = false;
             } else if (opt.start) {
